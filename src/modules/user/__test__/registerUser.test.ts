@@ -1,8 +1,8 @@
 import faker from '@faker-js/faker'
 import { test } from 'tap'
 import { ImportMock } from 'ts-mock-imports'
+import { prisma } from '../../../../prisma'
 import buildServer from '../../../server'
-import prisma from '../../../utils/prisma'
 import * as userService from '../user.service'
 
 test('POST `/api/users` - create user successfully with mock createUser', async (t) => {
